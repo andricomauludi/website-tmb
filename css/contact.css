@@ -1,0 +1,300 @@
+.header-image-section {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  height: 100vh; /* Full viewport height */
+  background: url("../assets/contact/TMB_WEB-06-compressed.png") no-repeat center
+    center/cover;
+}
+.header-content {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  color: white;
+  text-align: left;
+  max-width: 90%; /* Prevents the content from stretching too wide on large screens */
+}
+
+.header-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header-subtitle {
+  font-size: 1.5rem;
+  margin: 10px 0 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .header-title {
+    font-size: 3rem; /* Smaller font size on medium screens */
+  }
+
+  .header-subtitle {
+    font-size: 1.2rem; /* Adjust subtitle size for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .header-content {
+    top: 50%;
+    left: 0; /* Center content horizontally */
+    right: 0; /* Center content horizontally */
+    bottom: 50%;
+    text-align: center; /* Ensure text alignment is centered */
+  }
+
+  .header-title {
+    font-size: 3rem; /* Smaller font size on smaller screens */
+  }
+
+  .header-subtitle {
+    font-size: 1rem; /* Adjust subtitle size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    top: 50%;
+    left: 0; /* Center content horizontally */
+    right: 0; /* Center content horizontally */
+    bottom: 50%;
+    text-align: center; /* Ensure text alignment is centered */
+  }
+  .header-title {
+    font-size: 3rem; /* Even smaller font size for small screens */
+  }
+
+  .header-subtitle {
+    font-size: 0.8rem; /* Adjust subtitle size for very small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .header-content {
+    top: 50%;
+    left: 0; /* Center content horizontally */
+    right: 0; /* Center content horizontally */
+    bottom: 50%;
+    text-align: center; /* Ensure text alignment is centered */
+  }
+  .header-title {
+    font-size: 3rem; /* Further reduced font size for very small screens */
+  }
+
+  .header-subtitle {
+    font-size: 0.7rem; /* Adjust subtitle size for very small screens */
+  }
+}
+
+.contact-section {
+  padding: 50px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of columns on smaller screens */
+  justify-content: center; /* Center columns horizontally */
+  gap: 250px; /* Default gap between columns */  
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contact-column {
+  display: flex;
+  flex-direction: column;
+  gap: 50px; /* Gap between rows */
+  /* flex: 1 1 45%; Columns take up 45% of the container width */
+  
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Gap between logo and details */
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* justify-content: center; Center content horizontally */
+}
+
+.contact-row:hover {
+  transform: scale(1.05); /* Enlarges the row on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+.contact-logo img {
+  width: 50px; /* Default logo size */
+  height: 50px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-name {
+  font-size: 2rem; /* Default font size for contact name */
+  font-weight: bold;
+  color: #000; /* Ensures text is black */
+}
+
+.contact-info {
+  font-size: 1.5rem; /* Default font size for contact info */
+  color: #555;
+}
+
+.contact-row:hover .contact-name, .contact-row:hover .contact-info {
+  color: #000; /* Ensures text is black on hover */  
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 1200px) {
+  .contact-container {
+    gap: 100px; /* Adjusted gap for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-container {
+    gap: 50px; /* Further adjusted gap for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    gap: 30px; /* Reduced gap between columns for mobile screens */
+  }
+  
+  .contact-column {
+    flex: 1 1 100%; /* Full width for columns on mobile */
+    min-width: 100%; /* Ensures columns take full width */
+  }
+  
+  .contact-row {
+    flex-direction: column; /* Stack logo and details vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text horizontally */
+  }
+  
+  .contact-logo img {
+    width: 40px; /* Reduced size of logos for smaller screens */
+    height: 40px;
+  }
+
+  .contact-name {
+    font-size: 1.5rem; /* Reduced font size */
+  }
+  
+  .contact-info {
+    font-size: 1.2rem; /* Reduced font size */
+  }
+}
+
+.button-section {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-bottom:100px
+}
+
+.download-button {
+  display: inline-block;
+  padding: 15px 30px; /* Add padding for size */
+  font-size: 1.5rem; /* Font size for the button text */
+  font-weight: bold;
+  color: #000; /* Text color */
+  background-color: #fff; /* Button background color */
+  border: 2px solid #000; /* Black border */
+  border-radius: 50px; /* Rounded corners */
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+.download-button:hover {
+  transform: scale(1.1); /* Enlarge button on hover */
+  background-color: #f0f0f0; /* Light gray background color on hover */
+  border-color: #333; /* Darker border color on hover */
+}
+
+@media (max-width: 768px) {
+  .download-button {
+    padding: 12px 25px; /* Adjust padding for smaller screens */
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .download-button {
+    padding: 10px 20px; /* Further adjust padding for very small screens */
+    font-size: 1rem; /* Further adjust font size */
+  }
+}
+
+.head-office-section {
+  height: 70vh; /* Set the height of the section */
+  position: relative; /* Ensure the container fills the section */
+  display: flex;
+  flex-direction: column; /* Stack title and map vertically */
+}
+
+.section-title {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 70px; /* Adjust height as needed */
+  background-color: #fff; /* Background color for the title */
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 2rem; /* Font size for the title */
+  color: #000; /* Title color */
+}
+
+.map-container {
+  flex: 1; /* Fill the remaining space */
+  width: 100%; /* Fill the section width */
+}
+
+.map-container iframe {
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  border: 0; /* Remove border */
+}
+
+@media (max-width: 1200px) {
+  .section-title h2 {
+    font-size: 1.8rem; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .section-title h2 {
+    font-size: 1.6rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 1.4rem; /* Further adjust font size for small screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .head-office-section {
+    height: auto; /* Allow the section to adjust height based on content */
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title h2 {
+    font-size: 1.2rem; /* Further adjust font size for very small screens */
+  }
+}
+

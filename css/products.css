@@ -1,0 +1,244 @@
+/* Full page carousel */
+.carousel-item {
+  margin-top: 70px;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.carousel-inner {
+  height: 100%;
+}
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* White overlay with 50% opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Ensure the overlay is above the background image */
+}
+.carousel-logo {
+  max-width: 200px; /* Adjust size as needed */
+  z-index: 3; /* Ensure the logo is above the overlay */
+}
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 10; /* Ensure navigation controls are above the overlay */
+}
+.header-content {
+  margin-top: 50px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  color: white;
+  text-align: left;
+  max-width: 90%; /* Prevents the content from stretching too wide on large screens */
+  z-index: 10; /* Ensure it stays above the carousel */
+}
+
+.header-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header-subtitle {
+  font-size: 1.5rem;
+  margin: 10px 0 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .header-title {
+    font-size: 3rem; /* Smaller font size on medium screens */
+  }
+
+  .header-subtitle {
+    font-size: 1.2rem; /* Adjust subtitle size for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .header-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    text-align: center; /* Ensure text alignment is centered */
+  }
+
+  .header-title {
+    font-size: 3rem; /* Smaller font size on smaller screens */
+  }
+
+  .header-subtitle {
+    font-size: 1rem; /* Adjust subtitle size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    text-align: center; /* Ensure text alignment is centered */
+  }
+  .header-title {
+    font-size: 3rem; /* Even smaller font size for small screens */
+  }
+
+  .header-subtitle {
+    font-size: 0.8rem; /* Adjust subtitle size for very small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .header-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    text-align: center; /* Ensure text alignment is centered */
+  }
+  .header-title {
+    font-size: 3rem; /* Further reduced font size for very small screens */
+  }
+
+  .header-subtitle {
+    font-size: 0.7rem; /* Adjust subtitle size for very small screens */
+  }
+}
+
+.procurement-service-section {
+  padding: 50px 20px; /* Padding for spacing */
+  text-align: center; /* Center text */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.procurement-service-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 40px; /* Space below the title */
+  margin-bottom: 100px; /* Space below the title */
+}
+
+.procurement-service-gallery {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  gap: 100px; /* Increased space between images */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.procurement-service-item {
+  flex: 1 1 30%; /* Each item takes up about 30% of the row */
+  max-width: 350px; /* Maximum width for the items */
+  max-height: 350px; /* Fixed height for the items */
+  overflow: hidden; /* Hide overflow to maintain equal sizes */
+  transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.procurement-service-item:hover {
+  transform: scale(1.1); /* Enlarge the image on hover */
+}
+
+.procurement-service-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure images cover the container */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .procurement-service-item {
+    flex: 1 1 45%; /* Adjust width for smaller screens */
+    max-width: 100%; /* Full width for smaller screens */
+  }
+  .procurement-service-title {
+    font-size: 2rem;
+    
+  }
+}
+
+@media (max-width: 576px) {
+  .procurement-service-item {
+    flex: 1 1 100%; /* Full width for very small screens */
+    max-width: 100%; /* Full width for very small screens */
+  }
+  .procurement-service-title {
+    font-size: 1.5rem;
+    
+  }
+}
+.event-organizer-section {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.event-organizer-section-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.event-images-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.event-image {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .event-organizer-section-title {
+    font-size: 2.5rem; /* Slightly smaller title on medium screens */
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .event-images-container {
+    height: 50vh; /* Reduce height on medium screens */
+  }
+
+  .event-image {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-organizer-section-title {
+    font-size: 2rem; /* Smaller title on smaller screens */
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .event-images-container {
+    flex-direction: column; /* Stack images vertically */
+    height: auto;
+  }
+
+  .event-image {
+    width: 100%; /* Images take full width in stacked layout */
+    height: 50vh; /* Adjust height for each image */
+  }
+}
+
+@media (max-width: 576px) {
+  .event-organizer-section-title {
+    font-size: 1.5rem; /* Further reduced title size on very small screens */
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .event-image {
+    height: 40vh; /* Smaller height on very small screens */
+  }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tekad Mandiri Berjaya - Our Product</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/products.css" />
+    <link rel="icon" href="./assets/TMB-02.png" type="image/png">
+
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <!-- Logo -->
+        <a href="home" class="navbar-logo">
+          <img src="./assets/TMB-02.png" alt="Company Logo" />
+        </a>
+        <!-- Toggle Button for Mobile -->
+        <span class="navbar-toggle">&#9776;</span>
+        <!-- Navigation Links -->
+        <ul class="navbar-menu">
+          <li><a href="home">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="products" class="active">Our Product</a></li>
+          <li><a href="contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div
+          class="carousel-item active"
+          style="background-image: url('./assets/products/TMB_WEB-03-compressed.png')"
+        >
+          <!-- Content for Slide 1 -->
+        </div>
+        <div
+          class="carousel-item"
+          style="background-image: url('./assets/products/TMB_WEB-04-compressed.png')"
+        >
+          <!-- Content for Slide 2 -->
+        </div>
+        <div
+          class="carousel-item"
+          style="background-image: url('./assets/products/TMB_WEB-05-compressed.png')"
+        >
+          <!-- Content for Slide 3 -->
+        </div>
+        <div
+          class="carousel-item"
+          style="background-image: url('./assets/products/TMB_WEB-07-compressed.png')"
+        >
+          <!-- Content for Slide 4 -->
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <!-- Floating Title -->
+      <div class="header-content">
+        <h1 class="header-title">Our Product.</h1>
+        <!-- <p class="header-subtitle">Your Subtitle Here</p> -->
+      </div>
+    </div>
+
+    <section class="procurement-service-section">
+      <h2 class="procurement-service-title fade-in">Procurement Service</h2>
+      <div class="procurement-service-gallery fade-in">
+        <div class="procurement-service-item">
+          <img src="./assets/products/TMB_WEB-32.png" alt="Service 1" />
+        </div>
+        <div class="procurement-service-item">
+          <img src="./assets/products/TMB_WEB-31-compressed.png" alt="Service 2" />
+        </div>
+        <div class="procurement-service-item">
+          <img src="./assets/products/TMB_WEB-30.png" alt="Service 3" />
+        </div>
+      </div>
+    </section>
+    <section class="event-organizer-section">
+      <h2 class="event-organizer-section-title fade-in">Event Organizer</h2>
+      <div class="event-images-container fade-in">
+        <img src="./assets/products/TMB_WEB-34-compressed.png" alt="Event Image 1" class="event-image">
+        <img src="./assets/products/TMB_WEB-33-compressed.png" alt="Event Image 2" class="event-image">
+      </div>
+    </section>
+    <footer class="footer-section">
+      <div class="footer-container">
+        <!-- First Column -->
+        <div class="footer-logo">
+          <img src="./assets/TMB-03.png" alt="Company Logo" />
+        </div>
+        <!-- Second Column -->
+        <div class="footer-info">
+          <!-- Follow Us Column -->
+          <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-media-links">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                class="social-media-icon"
+              >
+                <img src="facebook-icon.png" alt="Facebook" />
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                class="social-media-icon"
+              >
+                <img src="twitter-icon.png" alt="Twitter" />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="social-media-icon"
+              >
+                <img src="instagram-icon.png" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+          <!-- Address Column -->
+          <div class="footer-column">
+            <h3>Address</h3>
+            <p>1234 Street Name, City, Country, ZIP Code</p>
+          </div>
+          <!-- Contact Us Column -->
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>+62 821 178956677</p>
+            <p>+62 821 178956677</p>
+            <p>(0251) 178956677</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="./js/navbar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

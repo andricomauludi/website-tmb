@@ -1,0 +1,258 @@
+.header-image-section {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  height: 100vh; /* Full viewport height */
+  background: url("../assets/about/TMB_WEB-02.png") no-repeat center
+    center/cover;
+}
+
+.header-content {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  color: white;
+  text-align: left;
+  max-width: 90%; /* Prevents the content from stretching too wide on large screens */
+}
+
+.header-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header-subtitle {
+  font-size: 1.5rem;
+  margin: 10px 0 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .header-title {
+    font-size: 3rem; /* Smaller font size on medium screens */
+  }
+
+  .header-subtitle {
+    font-size: 1.2rem; /* Adjust subtitle size for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .header-content {
+    top: 50%;
+    left: 0; /* Center content horizontally */
+    right: 0; /* Center content horizontally */
+    bottom: 50%;
+    text-align: center; /* Ensure text alignment is centered */
+  }
+
+  .header-title {
+    font-size: 3rem; /* Smaller font size on smaller screens */
+  }
+
+  .header-subtitle {
+    font-size: 1rem; /* Adjust subtitle size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    top: 50%;
+    left: 0; /* Center content horizontally */
+    right: 0; /* Center content horizontally */
+    bottom: 50%;
+    text-align: center; /* Ensure text alignment is centered */
+  }
+  .header-title {
+    font-size: 3rem; /* Even smaller font size for small screens */
+  }
+
+  .header-subtitle {
+    font-size: 0.8rem; /* Adjust subtitle size for very small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .header-content {
+    top: 50%;
+    left: 0; /* Center content horizontally */
+    right: 0; /* Center content horizontally */
+    bottom: 50%;
+    text-align: center; /* Ensure text alignment is centered */
+  }
+  .header-title {
+    font-size: 3rem; /* Further reduced font size for very small screens */
+  }
+
+  .header-subtitle {
+    font-size: 0.7rem; /* Adjust subtitle size for very small screens */
+  }
+}
+.who-we-are-section {
+  background-color: white; /* White background */
+  padding: 50px 200px; /* Adjusted padding for responsiveness */
+  text-align: center; /* Centering the text */
+}
+
+.who-we-are-title {
+  font-size: 3rem; /* Default font size */
+  font-weight: bold;
+  margin: 0 0 20px 0; /* Adjusted margin to separate title from subtitle */
+}
+
+.who-we-are-subtitle {
+  font-size: 1.5rem; /* Default font size */
+  font-weight: 100;
+  color: #555; /* Slightly gray text color for the subtitle */
+  margin: 0; /* Remove margin for responsive design */
+  line-height: 1.5; /* 1.5 line spacing */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .who-we-are-title {
+    font-size: 2.5rem; /* Smaller font size on medium screens */
+  }
+
+  .who-we-are-subtitle {
+    font-size: 1.25rem; /* Slightly smaller font size on medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .who-we-are-title {
+    font-size: 2rem; /* Smaller font size on smaller screens */
+  }
+
+  .who-we-are-subtitle {
+    font-size: 1rem; /* Smaller font size on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .who-we-are-section {
+    padding: 50px 20px; /* Adjusted padding for responsiveness */
+  }
+  .who-we-are-title {
+    font-size: 1.5rem; /* Further reduced font size for small screens */
+  }
+
+  .who-we-are-subtitle {
+    font-size: 0.875rem; /* Further reduced font size for small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .who-we-are-section {
+    padding: 50px 20px; /* Adjusted padding for responsiveness */
+  }
+  .who-we-are-title {
+    font-size: 1.25rem; /* Further reduced font size for very small screens */
+  }
+
+  .who-we-are-subtitle {
+    font-size: 0.75rem; /* Further reduced font size for very small screens */
+  }
+}
+
+.keypoints-section {
+  background-color: #ffffff; /* Light gray background for contrast */
+  padding: 50px 20px; /* Padding for spacing */
+  text-align: center; /* Center the title and chips */
+}
+
+.keypoints-title {
+  font-size: 3rem; /* Title font size */
+  font-weight: bold;
+  margin-bottom: 60px; /* Space between title and chips */
+}
+
+.keypoints-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow chips to wrap onto new lines */
+  justify-content: center; /* Center chips horizontally */
+  gap: 50px; /* Space between chips */
+}
+
+.chip {
+  background-color: #ffffff; /* White background for chips */
+  border: 1px solid #000000; /* Light border for chips */
+  border-radius: 25px; /* Rounded corners */
+  padding: 10px 10px; /* Padding inside chips */
+  font-size: 1.5rem; /* Font size for chip text */
+  font-weight: bold;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling */
+}
+
+/* Hover Effect */
+.chip:hover {
+  transform: scale(1.1); /* Increase size by 10% */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow for more depth */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .keypoints-title {
+    font-size: 1.5rem; /* Smaller title font size on smaller screens */
+  }
+
+  .chip {
+    font-size: 0.875rem; /* Smaller font size for chip text */
+    padding: 8px 16px; /* Adjust padding for chips */
+  }
+}
+
+@media (max-width: 576px) {
+  .keypoints-title {
+    font-size: 1.25rem; /* Further reduced title font size for very small screens */
+  }
+
+  .chip {
+    font-size: 0.75rem; /* Further reduced font size for chip text */
+    padding: 6px 12px; /* Further adjusted padding for chips */
+  }
+}
+
+.recent-clients-section {
+  background-color: #fff; /* Light gray background */
+  padding: 50px 100px; /* Padding for spacing */
+  text-align: center; /* Center text */
+}
+
+.recent-clients-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 60px; /* Space below the title */
+}
+
+.logos-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow logos to wrap onto new lines */
+  justify-content: center; /* Center the logos horizontally */
+  gap: 20px; /* Space between logos */
+  margin-bottom: 40px;
+}
+
+.logo-item {
+  flex: 1 1 30%; /* Each logo takes up about 30% of the row */  
+  height: 80px; /* Fixed height for the logos */
+  margin: 10px; /* Margin for spacing around logos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.logo-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Contain the image within the box */
+}
+
+.logo-item:hover {
+  transform: scale(1.1); /* Enlarge the logo on hover */
+}
