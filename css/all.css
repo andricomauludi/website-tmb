@@ -188,9 +188,18 @@ body {
   transform: scale(1.1); /* Enlarge the logo on hover */
 }
 .social-media-icon img {
-  max-width: 30px; /* Adjust size of social media icons */
+  max-width: 50px; /* Adjust size of social media icons */
 }
 
+@media (max-width: 1200px) {
+
+  .social-media-icon img {
+    max-width: 40px; /* Adjust size for smaller screens */
+  }
+  .footer-column p{
+    font-size: 0.75rem;
+   }
+}
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column; /* Stack columns vertically on small screens */
@@ -211,13 +220,17 @@ body {
     margin-bottom: 20px; /* Space between columns */
   }
 
+  .footer-column p{
+    font-size: 1rem;
+   }
+
   .social-media-links {
     flex-direction: column; /* Stack social media icons vertically */
     align-items: center; /* Center icons */
   }
 
   .social-media-icon img {
-    max-width: 25px; /* Adjust size for smaller screens */
+    max-width: 70px; /* Adjust size for smaller screens */
   }
 }
 
