@@ -180,6 +180,13 @@ body {
   gap: 10px; /* Space between social media icons */
 }
 
+.social-media-icon {
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+
+}
+.social-media-icon:hover {
+  transform: scale(1.1); /* Enlarge the logo on hover */
+}
 .social-media-icon img {
   max-width: 30px; /* Adjust size of social media icons */
 }

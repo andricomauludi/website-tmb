@@ -193,28 +193,45 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow for more depth */
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .keypoints-title {
-    font-size: 1.5rem; /* Smaller title font size on smaller screens */
+    font-size: 2.5rem; /* Ukuran font lebih kecil untuk layar sedang */
   }
 
   .chip {
-    font-size: 0.875rem; /* Smaller font size for chip text */
-    padding: 8px 16px; /* Adjust padding for chips */
+    font-size: 1.25rem; /* Ukuran font chip lebih kecil untuk layar sedang */
+  }
+}
+
+@media (max-width: 992px) {
+  .keypoints-title {
+    font-size: 2rem; /* Ukuran font lebih kecil untuk layar kecil */
+  }
+
+  .chip {
+    font-size: 1rem; /* Ukuran font chip lebih kecil untuk layar kecil */
+    padding: 8px 16px; /* Padding lebih kecil */
+  }
+}
+
+@media (max-width: 768px) {
+  .chip {
+    font-size: 0.875rem; /* Ukuran font lebih kecil untuk layar sangat kecil */
+    padding: 6px 12px; /* Padding lebih kecil lagi */
   }
 }
 
 @media (max-width: 576px) {
   .keypoints-title {
-    font-size: 1.25rem; /* Further reduced title font size for very small screens */
+    font-size: 1.5rem; /* Ukuran font lebih kecil untuk layar sangat kecil */
   }
 
   .chip {
-    font-size: 0.75rem; /* Further reduced font size for chip text */
-    padding: 6px 12px; /* Further adjusted padding for chips */
+    font-size: 0.75rem; /* Ukuran font chip lebih kecil lagi */
+    padding: 4px 8px; /* Padding lebih kecil lagi */
   }
 }
+
 
 .recent-clients-section {
   background-color: #fff; /* Light gray background */
@@ -228,13 +245,6 @@
   margin-bottom: 60px; /* Space below the title */
 }
 
-.logos-container {
-  display: flex;
-  flex-wrap: wrap; /* Allow logos to wrap onto new lines */
-  justify-content: center; /* Center the logos horizontally */
-  gap: 20px; /* Space between logos */
-  margin-bottom: 40px;
-}
 
 .logo-item {
   flex: 1 1 30%; /* Each logo takes up about 30% of the row */  
@@ -255,4 +265,74 @@
 
 .logo-item:hover {
   transform: scale(1.1); /* Enlarge the logo on hover */
+}
+
+.logos-container {
+  display: flex;
+  flex-wrap: wrap; /* Supaya logo bisa menyesuaikan diri */
+  justify-content: center; /* Centering logo */
+  gap: 30px; /* Jarak antara logo */
+  padding: 0 20px; /* Padding untuk penyesuaian */
+}
+
+.logo-item {
+  max-width: 300px; /* Ukuran maksimal logo untuk menghindari membesar */
+}
+
+@media (max-width: 1200px) {
+  .recent-clients-title {
+    font-size: 2.5rem; /* Ukuran font lebih kecil untuk layar sedang */
+  }
+  
+}
+
+@media (max-width: 992px) {
+  .recent-clients-title {
+    font-size: 2rem; /* Ukuran font lebih kecil untuk layar kecil */
+  }
+
+  .logo-item {
+    max-width: 220px; /* Ukuran maksimal logo lebih kecil untuk layar kecil */
+  }
+}
+
+@media (max-width: 768px) {
+  .recent-clients-title {
+    font-size: 1.75rem; /* Ukuran font lebih kecil lagi untuk layar sangat kecil */
+  }
+
+  .logo-item {
+    max-width: 170px; /* Ukuran maksimal logo lebih kecil lagi */
+  }
+  
+}
+
+@media (max-width: 576px) {
+  .recent-clients-title {
+    font-size: 1.5rem; /* Ukuran font paling kecil untuk layar sangat kecil */
+  }
+
+  .logo-item {
+    width: 1000px; /* Ukuran maksimal logo paling kecil */
+  }
+  .logos-container {
+    display: flex;
+    flex-direction: column; /* Make logos appear in a single column */
+    align-items: center; /* Center the logos horizontally */    
+  }
+  
+}
+@media (max-width: 400px) {
+  .recent-clients-title {
+    font-size: 1.5rem; /* Ukuran font paling kecil untuk layar sangat kecil */
+  }
+
+  .logo-item {
+    width: 100%; /* Ukuran maksimal logo paling kecil */
+  }
+  .logos-container {
+    display: flex;
+    flex-direction: column; /* Make logos appear in a single column */
+    align-items: center; /* Center the logos horizontally */    
+  }
 }
