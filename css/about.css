@@ -304,6 +304,7 @@
   .logo-item {
     max-width: 170px; /* Ukuran maksimal logo lebih kecil lagi */
   }
+
   
 }
 
@@ -313,26 +314,28 @@
   }
 
   .logo-item {
-    width: 1000px; /* Ukuran maksimal logo paling kecil */
+    width: 200px; /* Ukuran maksimal logo paling kecil */
   }
-  .logos-container {
-    display: flex;
+  .logos-container {    
     flex-direction: column; /* Make logos appear in a single column */
     align-items: center; /* Center the logos horizontally */    
+    flex-wrap: wrap;
   }
   
 }
-@media (max-width: 400px) {
+@media (max-width: 416px) {
   .recent-clients-title {
     font-size: 1.5rem; /* Ukuran font paling kecil untuk layar sangat kecil */
   }
+  .logos-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   .logo-item {
-    width: 100%; /* Ukuran maksimal logo paling kecil */
+    max-width: 80%; /* Ukuran maksimal logo paling kecil */    
+
   }
-  .logos-container {
-    display: flex;
-    flex-direction: column; /* Make logos appear in a single column */
-    align-items: center; /* Center the logos horizontally */    
-  }
+
 }
