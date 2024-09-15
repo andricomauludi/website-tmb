@@ -3,8 +3,8 @@
   width: 100%;
   margin-top: 50px;
   height: 100vh; /* Full viewport height */
-  background: url("../assets/contact/TMB_WEB-06-compressed.png") no-repeat center
-    center/cover;
+  background: url("../assets/contact/TMB_WEB-06-compressed.png") no-repeat
+    center center/cover;
 }
 .header-content {
   position: absolute;
@@ -97,7 +97,7 @@
   display: flex;
   flex-wrap: wrap; /* Allow wrapping of columns on smaller screens */
   justify-content: center; /* Center columns horizontally */
-  gap: 250px; /* Default gap between columns */  
+  gap: 250px; /* Default gap between columns */
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -107,7 +107,6 @@
   flex-direction: column;
   gap: 50px; /* Gap between rows */
   /* flex: 1 1 45%; Columns take up 45% of the container width */
-  
 }
 
 .contact-row {
@@ -147,8 +146,9 @@
   color: #555;
 }
 
-.contact-row:hover .contact-name, .contact-row:hover .contact-info {
-  color: #000; /* Ensures text is black on hover */  
+.contact-row:hover .contact-name,
+.contact-row:hover .contact-info {
+  color: #000; /* Ensures text is black on hover */
 }
 
 /* Media queries for responsiveness */
@@ -169,18 +169,18 @@
   .contact-container {
     gap: 30px; /* Reduced gap between columns for mobile screens */
   }
-  
+
   .contact-column {
     flex: 1 1 100%; /* Full width for columns on mobile */
     min-width: 100%; /* Ensures columns take full width */
   }
-  
+
   .contact-row {
     flex-direction: column; /* Stack logo and details vertically */
     align-items: center; /* Center items horizontally */
     text-align: center; /* Center text horizontally */
   }
-  
+
   .contact-logo img {
     width: 40px; /* Reduced size of logos for smaller screens */
     height: 40px;
@@ -189,7 +189,7 @@
   .contact-name {
     font-size: 1.5rem; /* Reduced font size */
   }
-  
+
   .contact-info {
     font-size: 1.2rem; /* Reduced font size */
   }
@@ -199,7 +199,7 @@
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  margin-bottom:100px
+  margin-bottom: 100px;
 }
 
 .download-button {
@@ -213,7 +213,8 @@
   border-radius: 50px; /* Rounded corners */
   text-align: center;
   text-decoration: none; /* Remove underline */
-  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    border-color 0.3s ease; /* Smooth transition */
 }
 
 .download-button:hover {
@@ -257,16 +258,27 @@
   font-size: 2rem; /* Font size for the title */
   color: #000; /* Title color */
 }
-
-.map-container {
-  flex: 1; /* Fill the remaining space */
-  width: 100%; /* Fill the section width */
+#map {
+  height: 100%; /* Fill the map container */
+  width: 100%; /* Fill the map container */
 }
 
-.map-container iframe {
-  width: 100%; /* Full width of the container */
-  height: 100%; /* Full height of the container */
-  border: 0; /* Remove border */
+.map-container {
+  width: 100%;
+  max-width: 100%;
+  height: 400px; /* Default height */
+}
+
+@media (min-width: 768px) {
+  .map-container {
+    height: 500px; /* Height for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .map-container {
+    height: 600px; /* Height for large screens */
+  }
 }
 
 @media (max-width: 1200px) {
@@ -297,4 +309,3 @@
     font-size: 1.2rem; /* Further adjust font size for very small screens */
   }
 }
-
